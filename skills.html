@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="css\index.css" type="text/css" rel="stylesheet" />
+    <title> Soo Kim Portfolio</title>
+</head>
+
+<body>
+    
+    <div class="header">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div> 
+    </div>
+
+    
+<script>
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function() { myFunction() };
+    function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+    }
+</script>
+    
+    <div id="topDiv">
+        <h1></h1>
+    </div>
+    
+    <div id="menubar">
+        <ul class="menulist">
+            <div class="dropdown">
+                <button class="dropbtn" > <a href="index.html">About Me</a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="index.html#aboutme">About Me</a>
+                    <a href="index.html#edu">Education</a>
+                    <a href="index.html#hobbies">Hobbies</a>
+                    <a href="index.html#interests">Interests</a>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <button class="dropbtn" > <a href="workexp.html">Work Experience</a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="workexp.html#networkinglab">Computer Networking Lab Assistant</a>
+                    <a href="workexp.html#ugalib">UGA Libraries General Ops Assistant</a>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <button class="dropbtn" > <a href="downloads.html">Downloads</a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="downloads.html">Résumé</a>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <button class="dropbtn" > <a href="involvement.html">Involvement</a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="involvement.html#community">Community</a>
+                    <a href="involvement.html#accomplish">Accomplishments</a>
+                    <a href="involvement.html#other">Other</a>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <button class="dropbtn" > <a href="skills.html">Skills </a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="skills.html#admin">Administrative</a>
+                    <a href="skills.html#comptech">Computer Technology</a>
+                    <a href="skills.html#lang">Language</a>
+                    <a href="skills.html#skills">Specialized Skills</a>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <button class="dropbtn" > <a href="contact.html">Contact</a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="contact.html#greeting">Send me a message.</a>
+                </div>
+            </div>        
+            
+        </ul>
+    </div>
+    
+    <div id="body">
+            <h1 class="heading">Technical Skills</h1>
+            
+            <h3 id="admin">Administrative</h3>
+                <p>Microsoft Word, PowerPoint, and Excel</p>
+                <p>Adept Typist 85+ WPM (data entry)</p>
+                <p>Secretarial duties</p>
+            <h3 id="comptech">Computer Technology</h3>
+                <p>Upgrading, repairing, and assembling computers</p>
+                <p>Programming – Java fundamentals; Eclipse IDE; Linux terminal experience; Emacs/Vim editor; HTML5 & CSS3</p>
+            <h3 id="special">Specialized skills</h3>
+                <p>Integrated Library System – Voyager</p>
+                <p>Educational - Blackboard Virtual Learning Environment Management</p>
+            <h3 id="lang">Language</h3>
+                <p>Fluency in English</p>
+                <p>Some education in Spanish</p>
+            <h3 id="otherskills">Other</h3>
+                <p>Valid Driver's License</p>
+                <p>Dog training (Guide Dog Volunteering)</p>
+    </div>
+    
+    <div id="lowerdiv">
+        <div id="btm1">
+            <h3 class="contact">Contact</h3>
+                <p> Phone: +1 (678) 414-4641</p>
+                <p> Email: sokim96@gmail.com</p>
+        </div>
+        <div id="btm2">
+            <h3 class="contact">Hours</h3>
+                <p> Mon—Fri: 7:00AM–10:00PM</p>
+                <p> Sat—Sun: 7:00AM–10:00PM</p>
+        </div>
+        <div id="btm3">
+            <h3 class="contact">Social</h3>
+                <a href="https://www.linkedin.com/in/soo-kim-4627a4170/">
+                    <img src="images/linkedin.svg" alt="LinkedIn icon hyperlink" />
+                </a>            
+                <!-- Trigger/Open Modals -->
+                <a href="#" onClick="return false;">
+                    <img id="fbBtn" src="images/facebook.svg" alt="Facebook icon hyperlink" />
+                </a>
+                <a href="#" onClick="return false;">
+                    <img id="instaBtn" src="images/instagram.svg" alt="Instagram icon hyperlink" />
+                </a>
+                <a href="mailto:sokim96@gmail.com">
+                    <img src="images/mail.svg" alt="mailto:sokim96@gmail.com" />
+                </a>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>Content Unavailable</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>This content has been made intentionally unavailable to protect my privacy.</p>
+                        <p>This notice has been implemented for demonstrational purpose and in the event of future changes.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <h3></h3>
+                    </div>
+                </div>
+            </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+        // Get the button that opens the modal
+        var fbBtn = document.getElementById("fbBtn");
+        var instaBtn = document.getElementById("instaBtn");
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        // When the user clicks the button, open the modal 
+        fbBtn.onclick = function() {
+            modal.style.display = "block";
+        }
+        // When the user clicks the button, open the modal 
+        instaBtn.onclick = function() {
+            modal.style.display = "block";
+        }
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+        </div>
+        
+        <div id="btmright">
+            <h3>Disclaimer</h3>
+                <p>All content, including text, graphics, images, and information, contained on or available through this web site, is subject to change and for general information purposes only.</p>
+        </div>
+    </div>
+</body>
+    
+</html>
