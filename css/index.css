@@ -97,10 +97,10 @@ h1 {
 }
 
 #topDiv h1:hover:before {
-     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
-            animation: fadein 2s;
+     -webkit-animation: fadein 1.6s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1.6s; /* Firefox < 16 */
+        -ms-animation: fadein 1.6; /* Internet Explorer */
+            animation: fadein 1.6s;
     content: '678 414 4641';
     font-style: italic;
     font-family: Garamond, "Header";
@@ -111,7 +111,7 @@ h1 {
     font-weight: bold;
     letter-spacing: 7px;
     transition-timing-function: ease-in;
-    transition: 1.4s;
+    transition: 1.6s;
     opacity: .8;
 }
 
