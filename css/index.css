@@ -583,7 +583,12 @@ input[type=reset]:hover {
     display: inline-block;
 }
 .imgTitle {
-
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 .overlayTitle { /*the writing overlay*/
   position: absolute; 
