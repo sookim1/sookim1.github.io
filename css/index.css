@@ -142,6 +142,13 @@ h1 {
     overflow-x: scroll;
     overflow-y: hidden;
     margin-bottom: 14px;
+    
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 #imgDiv::-webkit-scrollbar {  
     height: 11px;  
@@ -159,13 +166,6 @@ h1 {
     max-height: 280px;
     object-fit: cover;
     padding: none;
-    
-    user-drag: none; 
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
 }
 
 #body {
