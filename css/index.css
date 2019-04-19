@@ -159,6 +159,13 @@ h1 {
     max-height: 280px;
     object-fit: cover;
     padding: none;
+    
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 #body {
