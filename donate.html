@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <!-- comments-->
+        <title>Soo Kim</title>
+        <link href="styles/style.css" type="text/css" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" sizes="16x16" href="images/favicon.ico">
+        <link href="images/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+
+        <meta charset="utf-8" />
+        <meta name="author" content="Soo Kim" /> <!--author of the page-->
+        <meta name="description" content="Author's personal website." /> <!--describes page content; used as Google snippet-->
+        <meta name="keywords" content="Soo Kim, profile, programming, administrative" /> <!-- suggestions to search engines about keywords for this site-->
+        <meta name="generator" content="HTML5, CSS3" /> <!-- what software was used to create the page-->
+    </head>
+
+    <body>
+        <button onclick="topFunction()" id="scrollTopBtn" title="Go to top">scroll top</button>
+        <!--  Header  -->
+        <header>
+            <nav>
+                <ul class="menulist">
+                    <!--<div class="dropdown">
+        <button class="navbtn">
+            <a><img src="images/" alt="Main Logo" width="55px" height="55px"></a>
+        </button>
+    </div>-->
+                    <div class="dropdown">
+                        <button class="navbtn">
+                            <a href="index.html" draggable="false" ondragstart="return false;">About</a>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="index.html#aboutme" class="noselect" draggable="false" ondragstart="return false;">Me</a>
+                            <a href="index.html#site" class="noselect" draggable="false" ondragstart="return false;">The Site</a>
+                            <a href="index.html#edu" class="noselect" draggable="false" ondragstart="return false;">Education</a>
+                            <a href="index.html#hobbies" class="noselect" draggable="false" ondragstart="return false;">Hobbies</a>
+                            <a href="index.html#interests" class="noselect" draggable="false" ondragstart="return false;">Interests</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="navbtn">
+                            <a href="workexp.html" draggable="false" ondragstart="return false;">Work Experience</a>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="workexp.html#dg" class="noselect" draggable="false" ondragstart="return false;">Assignment Coordinator</a>
+                            <a href="workexp.html#kwintl" class="noselect" draggable="false" ondragstart="return false;">Call Center Dispatcher & Customer Support Representative</a>
+                            <a href="workexp.html#networkinglab" class="noselect" draggable="false" ondragstart="return false;">Computer Networking Lab Assistant</a>
+                            <a href="workexp.html#ugalib" class="noselect" draggable="false" ondragstart="return false;">UGA Libraries General Ops Assistant</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="navbtn">
+                            <a href="downloads.html" draggable="false" ondragstart="return false;">Downloads</a>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="downloads.html#resume" class="noselect" draggable="false" ondragstart="return false;">Résumé</a>
+                            <a href="downloads.html#covidvax" class="noselect" draggable="false" ondragstart="return false;">COVID-19 Vaccination Records</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="navbtn">
+                            <a href="involvement.html" draggable="false" ondragstart="return false;">Involvement</a>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="involvement.html#community" class="noselect" draggable="false" ondragstart="return false;">Community</a>
+                            <a href="involvement.html#honors" class="noselect" draggable="false" ondragstart="return false;">Honors</a>
+                            <a href="involvement.html#other" class="noselect" draggable="false" ondragstart="return false;">Other</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="navbtn">
+                            <a href="skills.html" draggable="false" ondragstart="return false;">Skills </a>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="skills.html#admin" class="noselect" draggable="false" ondragstart="return false;">Administrative</a>
+                            <a href="skills.html#comptech" class="noselect" draggable="false" ondragstart="return false;">Computer Technology</a>
+                            <a href="skills.html#lang" class="noselect" draggable="false" ondragstart="return false;">Language</a>
+                            <a href="skills.html#specialskills" class="noselect" draggable="false" ondragstart="return false;">Specialized Skills</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="navbtn">
+                            <a class="active" href="donate.html" draggable="false" ondragstart="return false;">Donate</a>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="donate.html#ASAN" class="noselect" draggable="false" ondragstart="return false;">Autism Self Advocacy Network</a>
+                            <a href="donate.html#ACLU" class="noselect" draggable="false" ondragstart="return false;">American Civil Liberties Union</a>
+                            <a href="donate.html#celiacfoundation" class="noselect" draggable="false" ondragstart="return false;">Celiac Disease Foundation</a>
+                            <a href="donate.html#trevorproject" class="noselect" draggable="false" ondragstart="return false;">The Trevor Project</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="navbtn">
+                            <a href="vaccination.html" draggable="false" ondragstart="return false;">Vaccine Status</a>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="vaccination.html#covid" class="noselect" draggable="false" ondragstart="return false;">COVID-19</a>
+                            <a href="vaccination.html#monkeypox" class="noselect" draggable="false" ondragstart="return false;">Monkeypox</a>
+                        </div>
+                    </div>
+
+                    <!--<div class="dropdown">
+        <button class="navbtn">
+        </button>
+        <form action="url">
+            <label for="search"></label>
+            <input type="search" name="search" required placeholder="Search" />
+            <button type="submit" class="search-button">Enter</button>
+        </form>
+    </div>-->
+
+                </ul>
+            </nav>
+        </header>
+
+
+        <!--  -->
+        <main>
+            <div id="bodyleft">
+                <hr />
+                <h1 class="heading">Donate</h1>
+                <h3 id="causes">Consider contributing to any of these causes:</h3>
+
+                <div class="resumediv">
+                    <a href="https://autisticadvocacy.org/about-asan/" draggable="false" ondragstart="return false;">
+                        <img class="resumepic" id="ASAN"
+                             src="images/ASAN.png"
+                             draggable="false" ondragstart="return false;"
+                             alt="Autism Self Advocacy Network about page" />
+                    </a>
+                </div>
+
+                <div class="resumediv">
+                    <a href="https://www.aclu.org/faqs" draggable="false" ondragstart="return false;">
+                        <img class="resumepic" id="ACLU"
+                             src="images/aclu.jpg"
+                             draggable="false" ondragstart="return false;"
+                             alt="American Civil Liberties Union about page" />
+                    </a>
+                </div>
+
+                <div class="resumediv">
+                    <a href="https://celiac.org/about-the-foundation/mission-and-purpose/" draggable="false" ondragstart="return false;">
+                        <img class="resumepic" id="celiacfoundation"
+                             src="images/celiacdiseasefoundation.png"
+                             draggable="false" ondragstart="return false;"
+                             alt="Celiac Disease Foundation about page" />
+                    </a>
+                </div>
+
+                <div class="resumediv">
+                    <a href="https://www.thetrevorproject.org/" draggable="false" ondragstart="return false;">
+                        <img class="resumepic" id="trevorproject"
+                             src="images/trevorproject.jpg"
+                             draggable="false" ondragstart="return false;"
+                             alt="The Trevor Project about page" />
+                    </a>
+                </div>
+
+            </div>
+
+            <div id="bodyright">
+                <h3>Suicide and Crisis Hotline</h3>
+                <p>Dial: 9 8 8</p>
+                <p>https://988lifeline.org/</p>
+                <p>The Lifeline provides 24/7, free and confidential support for people in distress, prevention and crisis resources for you or your loved ones, and best practices for professionals in the United States.</p>
+
+                <h3>Check your voter registration status or get registered to vote</h3>
+                <p>https://registertovote.sos.ga.gov/GAOLVR/welcome.do#no-back-button</p>
+
+                <h3>Substance Abuse and Mental Health Services Administration</h3>
+                <p>https://www.samhsa.gov/find-help/national-helpline</p>
+                <p>
+                    SAMHSA’s National Helpline is a free, confidential, 24/7, 365-day-a-year treatment referral and information service (in English and Spanish) for individuals and families facing mental and/or substance use disorders. Call 1-800-662-HELP (4357).
+                </p>
+
+                <h3>Child Protective Services</h3>
+                <p>https://dfcs.georgia.gov/services/child-abuse-neglect</p>
+                <p>https://dhs.georgia.gov/child-protective-services</p>
+                <p>Child Protective Services staff investigate reports of child abuse and/or neglect in an effort to provide services to protect the child and strengthen the family.</p>
+
+
+            </div>
+        </main>
+
+        <footer>
+            <!--<a href="https://validator.w3.org/"><img src="images/valid-html401.png" alt=" w3 validator html" /></a>-->
+            <!-- <a href="https://validator.w3.org/check?uri=referer">w3 validator html referer</a>-->
+            <!--<a href="https://jigsaw.w3.org/css-validator"><img src="images/valid-css.png" alt="W3C CSS validator" /></a>-->
+            <!-- <a href="https://jigsaw.w3.org/css-validator/check/referer">W3C CSS validator</a> -->
+            <div id="btm1">
+                <h3 class="contact">Contact</h3>
+                <p>
+                    Email: acanopyfox@gmail.com&nbsp;<a href="mailto:acanopyfox@gmail.com">
+                        &#128231;
+                        <!--<img src="images/mail.svg" alt="mailto:acanopyfox@gmail.com" />-->
+                    </a>
+                </p>
+
+            </div>
+            <div id="btm2">
+                <h3 class="contact">Hours</h3>
+                <p> Mon—Fri: 7:00AM–10:00PM</p>
+                <p> Sat—Sun: 7:00AM–10:00PM</p>
+            </div>
+            <div id="btm3">
+                <!--<h3 class="contact">Location</h3>-->
+                <div class="responsive-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52890.605634269356!2d-84.10066713670984!3d34.05251853492134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f593792927179f%3A0xd0dde933691191ed!2sSuwanee%2C%20GA%2030024!5e0!3m2!1sen!2sus!4v1660968771239!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div id="btmright">
+                <h3>Disclaimer</h3>
+                <small>All content, including text, graphics, images, and information, contained on or available through this web site, is subject to change and is for general information purposes only.</small>
+            </div>
+            <!-- Shows name phase change -->
+            <!--
+           <div id="topDiv">
+               <h1></h1>
+           </div>
+        -->
+        </footer>
+
+        <script src="scripts/javascript.js"></script>
+
+
+    </body>
+</html>
